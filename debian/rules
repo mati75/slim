@@ -1,0 +1,32 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+CMAKE_FLAGS = -DUSE_PAM=yes -DUSE_CONSOLEKIT=yes
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CMAKE_FLAGS)
+
+override_dh_installinit:
+	dh_installinit --noscripts
+#dh_installinit --no-restart-on-upgrade --no-start \
+#		--update-rcd-params="start 99 2 3 4 5 . stop 1 0 1 6 ."
+
+override_dh_installpam:
+	dh_installpam --name=slim
+
+override_dh_install:
+	dh_install --list-missing
+
+	# pam
+	#install -D -m 0644  pam.sample \
+		#$(CURDIR)/debian/slim/etc/pam.d/slim
+	# remove COPYRIGHT files.
+	rm -rf \
+		debian/slim/usr/share/slim/themes/debian-moreblue-orbit/COPYING \
+		debian/slim/usr/share/slim/themes/debian-moreblue/COPYING \
+		debian/slim/usr/share/slim/themes/debian-spacefun/COPYING \
+		debian/slim/usr/share/slim/themes/debian-joy/COPYING
+
