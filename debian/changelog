@@ -2,6 +2,7 @@ slim (1.3.6-0.1) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * New upstream release.
+  * Add debian/watch.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 08 Jan 2014 19:20:58 +0100
 
