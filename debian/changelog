@@ -5,8 +5,10 @@ slim (1.3.6-0.1) UNRELEASED; urgency=medium
   * Add debian/watch.
   * debian/control:
     + update build depends for new version.
+    + bump standards version.
   * Add upstart support. (Closes: #704049)
   * Add fvwm to slim.conf. (Closes: #689781)
+  * Add debian/patches/slim-1.3.6-fix-libslim-libraries.patch.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 08 Jan 2014 19:20:58 +0100
 
