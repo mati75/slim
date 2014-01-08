@@ -40,7 +40,7 @@ index a8e2e1c..36ee57f 100644
  # above, so your login command can handle different sessions.
  # see the xinitrc.sample file shipped with slim sources
 -sessions            xfce4,icewm-session,wmaker,blackbox
-+sessions            default,startxfce4,openbox,ion3,icewm,wmaker,blackbox,awesome
++sessions            default,startxfce4,openbox,ion3,icewm,wmaker,blackbox,awesome,fvwm
  
  # Executed when pressing F11 (requires imagemagick)
 -screenshot_cmd      import -window root /slim.png

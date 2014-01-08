@@ -6,6 +6,7 @@ slim (1.3.6-0.1) UNRELEASED; urgency=medium
   * debian/control:
     + update build depends for new version.
   * Add upstart support. (Closes: #704049)
+  * Add fvwm to slim.conf. (Closes: #689781)
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Wed, 08 Jan 2014 19:20:58 +0100
 
