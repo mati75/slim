@@ -1,2 +1,3 @@
 slim-conf.patch
-disable_log.patch
+#disable_log.patch
+slim-1.3.6-fix-libslim-libraries.patch
