@@ -1,9 +1,10 @@
-slim (1.3.6-5) UNRELEASED; urgency=medium
+slim (1.3.6-4) UNRELEASED; urgency=medium
 
   * Drop consolekit depends. Thanks Elimar Riesebieter <riesebie@lxtec.de>
     for the patch.
   * Bump Standards-Version to 3.9.6. (no changes needed)
   * Update homepage.
+  * Update debian/watch to new homepage.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 19 Dec 2014 20:13:47 +0100
 
