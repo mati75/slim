@@ -38,4 +38,5 @@ override_dh_install:
 		debian/slim/usr/share/slim/themes/debian-moreblue-orbit/COPYING \
 		debian/slim/usr/share/slim/themes/debian-moreblue/COPYING \
 		debian/slim/usr/share/slim/themes/debian-spacefun/COPYING \
-		debian/slim/usr/share/slim/themes/debian-joy/COPYING
+		debian/slim/usr/share/slim/themes/debian-joy/COPYING \
+		debian/slim/usr/share/slim/themes/debian-lines/COPYING
