@@ -5,6 +5,10 @@ slim (1.3.6-4) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.6. (no changes needed)
   * Update homepage.
   * Update debian/watch to new homepage.
+  * Add new themes Lines for Debian 8:
+    - Update debian/copyright.
+    - Refresh debian/patches/slim-conf.patch
+    - Update debian/slim.install.
 
  -- Mateusz Łukasik <mati75@linuxmint.pl>  Fri, 19 Dec 2014 20:13:47 +0100
 

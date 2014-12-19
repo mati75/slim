@@ -6,6 +6,8 @@ debian/debian-moreblue-orbit usr/share/slim/themes
 debian/debian-spacefun usr/share/slim/themes/
 # joy
 debian/debian-joy usr/share/slim/themes/
+# lines
+debian/debian-lines usr/share/slim/themes/
 
 debian/local/Xsession.d/20slim_locale etc/X11/Xsession.d
 

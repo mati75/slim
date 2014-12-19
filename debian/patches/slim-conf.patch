@@ -52,7 +52,7 @@ index a8e2e1c..36ee57f 100644
  # current theme, use comma separated list to specify a set to 
  # randomly choose from
 -current_theme       default
-+current_theme       debian-joy
++current_theme       debian-lines
  
  # Lock file
  lockfile            /var/run/slim.lock

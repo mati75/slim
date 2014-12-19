@@ -82,6 +82,7 @@ Copyright: 2007-2008, Mike Massonnet <mmassonnet@gmail.com>
 License: GPL-2+
 
 Files: debian/debian-joy/*;debian/debian-moreblue-orbit/*;debian/debian-spacefun/*;
+       debian/debian-lines/*;
 Copyright: 2007-2008 Mike Massonnet <mmassonnet@gmail.com>
 	   2008 Yves-Alexis Perez <corsac@debian.org>
 License: GPL-2+
@@ -92,6 +93,10 @@ License: GPL-2+
 
 Files: debian/debian-moreblue-orbit/background.png
 Copyright: Valessio S Brito <valessio@debianart.org>
+License: GPL-2+
+
+Files: debian/debian-lines/background.png
+Copyright: 2014, Juliette Taka BELIN <juliettetaka.belin@gmail.com>
 License: GPL-2+
 
 License: GPL-2+
