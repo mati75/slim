@@ -7,7 +7,7 @@ Build-Depends: debconf, debhelper (>= 9), libjpeg-dev, libpam0g-dev,
 	libpng-dev, libxft-dev, libxmu-dev, po-debconf, sharutils,
 	zlib1g-dev, cmake, freeglut3-dev, libpthread-stubs0-dev, libxrandr-dev,
         dh-systemd
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://slim.berlios.de/
 
 Package: slim
