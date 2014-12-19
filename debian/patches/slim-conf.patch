@@ -1,5 +1,6 @@
 diff --git a/slim.conf b/slim.conf
 index a8e2e1c..36ee57f 100644
+
 --- a/slim.conf
 +++ b/slim.conf
 @@ -1,17 +1,18 @@
@@ -35,20 +36,18 @@ index a8e2e1c..36ee57f 100644
  
  # Commands executed when starting and exiting a session.
  # They can be used for registering a X11 session with
-@@ -51,10 +52,10 @@ login_cmd           exec /bin/bash -login ~/.xinitrc %session
- # The current chosen session name is replaced in the login_cmd
- # above, so your login command can handle different sessions.
- # see the xinitrc.sample file shipped with slim sources
--sessions            xfce4,icewm-session,wmaker,blackbox
-+sessions            default,startxfce4,openbox,ion3,icewm,wmaker,blackbox,awesome,fvwm
+@@ -51,8 +52,8 @@ login_cmd           exec /bin/bash -logi
+ # slim reads xsesion from this directory, and be able to select.
+ sessiondir            /usr/share/xsessions/
  
- # Executed when pressing F11 (requires imagemagick)
+-# Executed when pressing F11 (requires imagemagick)
 -screenshot_cmd      import -window root /slim.png
++# Executed when pressing F11 (requires scrot)
 +screenshot_cmd      scrot /root/slim.png
  
  # welcome message. Available variables: %host, %domain
  welcome_msg         Welcome to %host
-@@ -81,7 +82,7 @@ reboot_msg         The system is rebooting...
+@@ -79,7 +80,7 @@ reboot_msg         The system is rebooti
  
  # current theme, use comma separated list to specify a set to 
  # randomly choose from

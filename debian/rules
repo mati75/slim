@@ -1,10 +1,20 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-CMAKE_FLAGS = -DUSE_PAM=yes -DUSE_CONSOLEKIT=yes
+DEB_HOST_ARCH_OS := $(shell dpkg-architecture -qDEB_HOST_ARCH_OS)
+
+CMAKE_FLAGS = -DUSE_PAM=yes -DUSE_CONSOLEKIT=yes -DBUILD_SHARED_LIBS=no -DBUILD_SLIMLOCK=yes
+
+ifeq ($(DEB_HOST_ARCH_OS),kfreebsd)
+ CMAKE_FLAGS = -DUSE_PAM=yes -DUSE_CONSOLEKIT=yes -DBUILD_SHARED_LIBS=no -DBUILD_SLIMLOCK=no
+endif
+
+ifeq ($(DEB_HOST_ARCH_OS),hurd)
+ CMAKE_FLAGS = -DUSE_PAM=yes -DUSE_CONSOLEKIT=yes -DBUILD_SHARED_LIBS=no -DBUILD_SLIMLOCK=no
+endif
 
 %:
-	dh $@ --buildsystem=cmake
+	dh $@ --buildsystem=cmake --with systemd
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(CMAKE_FLAGS)
@@ -29,4 +39,3 @@ override_dh_install:
 		debian/slim/usr/share/slim/themes/debian-moreblue/COPYING \
 		debian/slim/usr/share/slim/themes/debian-spacefun/COPYING \
 		debian/slim/usr/share/slim/themes/debian-joy/COPYING
-

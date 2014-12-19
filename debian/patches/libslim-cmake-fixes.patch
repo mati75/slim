@@ -1,0 +1,36 @@
+Description: Fix libralies linking
+Author: Ian Stakenvicius <axs@gentoo.org>
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -122,6 +122,7 @@ if(USE_PAM)
+ 		message("\tPAM Found")
+ 		set(SLIM_DEFINITIONS ${SLIM_DEFINITIONS} "-DUSE_PAM")
+ 		target_link_libraries(${PROJECT_NAME} ${PAM_LIBRARY})
++		target_link_libraries(libslim ${PAM_LIBRARY})
+ 		if(BUILD_SLIMLOCK)
+ 			target_link_libraries(slimlock ${PAM_LIBRARY})
+ 		endif(BUILD_SLIMLOCK)
+@@ -182,7 +183,10 @@ include_directories(
+ )
+ 
+ target_link_libraries(libslim
+-    ${JPEG_LIBRARIES}
++	${RT_LIB}
++	${X11_Xft_LIB}
++	${X11_Xrandr_LIB}
++	${JPEG_LIBRARIES}
+ 	${PNG_LIBRARIES}
+ )
+ 
+@@ -235,8 +239,8 @@ if (BUILD_SHARED_LIBS)
+ 		SOVERSION ${SLIM_VERSION})
+ 
+ 	install(TARGETS libslim
+-		LIBRARY DESTINATION lib
+-		ARCHIVE DESTINATION lib
++		LIBRARY DESTINATION lib${LIB_SUFFIX}
++		ARCHIVE DESTINATION lib${LIB_SIFFUX}
+ 	)
+ endif (BUILD_SHARED_LIBS)
+ 

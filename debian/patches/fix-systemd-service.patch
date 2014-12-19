@@ -1,0 +1,11 @@
+Description: Add WantedBy field to systemd slim.service
+Author: Mateusz Łukasik <mati75@linuxmint.pl>
+Bug-Debian: http://bugs.debian.org/741511
+
+--- a/slim.service
++++ b/slim.service
+@@ -7,3 +7,4 @@ ExecStart=/usr/bin/slim -nodaemon
+ 
+ [Install]
+ Alias=display-manager.service
++WantedBy=graphical.target
