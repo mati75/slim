@@ -13,7 +13,7 @@ Files: Ck.cpp
 Copyright: 2011, David Hauweele
 License: GPL-2+
 
-Files: Ck.h; PAM.*
+Files: Ck.h, PAM.*
 Copyright: 2007, Martin Parm
 License: GPL-2+
 
@@ -21,7 +21,7 @@ Files: image.*
 Copyright: 2002-2004 Hari Nair <hari@alumni.caltech.edu>
 License: GPL-2+
 
-Files: jpeg.c; png.c
+Files: jpeg.c, png.c
 Copyright: 2002 Hari Nair <hari@alumni.caltech.edu>
 License: GPL-2+
 
@@ -81,8 +81,8 @@ Copyright: 2007-2008, Mike Massonnet <mmassonnet@gmail.com>
 	   2014, Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
 
-Files: debian/debian-joy/*;debian/debian-moreblue-orbit/*;debian/debian-spacefun/*;
-       debian/debian-lines/*;
+Files: debian/debian-joy/*,debian/debian-moreblue-orbit/*,debian/debian-spacefun/*,
+       debian/debian-lines/*
 Copyright: 2007-2008 Mike Massonnet <mmassonnet@gmail.com>
 	   2008 Yves-Alexis Perez <corsac@debian.org>
 License: GPL-2+
