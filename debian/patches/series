@@ -4,3 +4,4 @@ slim-fix-env-alloc.patch
 no-slimlock-with-pam.patch
 libslim-cmake-fixes.patch
 fix-systemd-service.patch
+fix-hyphen-used-as-minus-sign.patch

@@ -8,6 +8,7 @@
 # changes should be coordinated with translators and reviewers.
 #
 #
+
 Template: slim/daemon_name
 Type: string
 Default: /usr/bin/slim

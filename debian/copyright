@@ -13,39 +13,40 @@ Files: Ck.cpp
 Copyright: 2011, David Hauweele
 License: GPL-2+
 
-Files: Ck.h, PAM.*
+Files: Ck.h PAM.*
 Copyright: 2007, Martin Parm
 License: GPL-2+
 
 Files: image.*
-Copyright: 2002-2004 Hari Nair <hari@alumni.caltech.edu>
+Copyright: 2002-2004, Hari Nair <hari@alumni.caltech.edu>
 License: GPL-2+
 
-Files: jpeg.c, png.c
-Copyright: 2002 Hari Nair <hari@alumni.caltech.edu>
+Files: jpeg.c 
+       png.c
+Copyright: 2002, Hari Nair <hari@alumni.caltech.edu>
 License: GPL-2+
 
 Files: slimlock.cpp
-Copyright: 2010-2012 Joel Burget <joelburget@gmail.com>
+Copyright: 2010-2012, Joel Burget <joelburget@gmail.com>
 License: GPL-2+
 
 Files: util.*
-Copyright: 2009 Eygene Ryabinkin <rea@codelabs.ru>
+Copyright: 2009, Eygene Ryabinkin <rea@codelabs.ru>
 License: GPL-2+
 
 Files: themes/default/panel.png
-Copyright: 2004 Lila Community
+Copyright: 2004, Lila Community
 License: GPL-2+
 
-Files: themes/default/background.png
-Copyright: 2005 rafael nascimento
+Files: themes/default/background.jpg
+Copyright: 2005, rafael nascimento
 License: permissive
  This file may be copied and used freely without restrictions. It may
  be used in projects which are not available under a GNU General Public License.
 
 Files: cmake/*
 Copyright: 2006, Alexander Neundorf, <neundorf@kde.org>
-	       2008, Kevin Kofler, <kevin.kofler@chello.at>
+	   2008, Kevin Kofler, <kevin.kofler@chello.at>
 License: BSD-3-clause
  These scripts are placed under the BSD license:
  Copyright (c) The Regents of the University of California.
@@ -81,14 +82,16 @@ Copyright: 2007-2008, Mike Massonnet <mmassonnet@gmail.com>
 	   2014, Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
 
-Files: debian/debian-joy/*,debian/debian-moreblue-orbit/*,debian/debian-spacefun/*,
+Files: debian/debian-joy/*
+       debian/debian-moreblue-orbit/*
+       debian/debian-spacefun/*
        debian/debian-lines/*
-Copyright: 2007-2008 Mike Massonnet <mmassonnet@gmail.com>
-	   2008 Yves-Alexis Perez <corsac@debian.org>
+Copyright: 2007-2008, Mike Massonnet <mmassonnet@gmail.com>
+	   2008, Yves-Alexis Perez <corsac@debian.org>
 License: GPL-2+
 
 Files: debian/debian-moreblue/*
-Copyright: 2007 Mike Massonnet
+Copyright: 2007, Mike Massonnet
 License: GPL-2+
 
 Files: debian/debian-moreblue-orbit/background.png
