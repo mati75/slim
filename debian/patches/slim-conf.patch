@@ -1,5 +1,4 @@
-diff --git a/slim.conf b/slim.conf
-index a8e2e1c..36ee57f 100644
+Description: Debian changes for slim.conf
 
 --- a/slim.conf
 +++ b/slim.conf
