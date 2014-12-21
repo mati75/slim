@@ -1,11 +1,18 @@
-Description: Add WantedBy field to systemd slim.service
-Author: Mateusz Łukasik <mati75@linuxmint.pl>
-Bug-Debian: http://bugs.debian.org/741511
+Description: Ensure we are starting slim under systemd only when selected
+Author: Didier Roche <didrocks@ubuntu.com>
+Bug-Debian: http://bugs.debian.org/748668
 
---- a/slim.service
-+++ b/slim.service
-@@ -7,3 +7,4 @@ ExecStart=/usr/bin/slim -nodaemon
+Index: slim-1.3.6/slim.service
+===================================================================
+--- slim-1.3.6.orig/slim.service
++++ slim-1.3.6/slim.service
+@@ -3,7 +3,6 @@ Description=SLiM Simple Login Manager
+ After=systemd-user-sessions.service
  
- [Install]
- Alias=display-manager.service
-+WantedBy=graphical.target
+ [Service]
++ExecStartPre=/bin/sh -c '[ "$(cat /etc/X11/default-display-manager 2>/dev/null)" = "/usr/bin/slim" ]'
+ ExecStart=/usr/bin/slim -nodaemon
+-
+-[Install]
+-Alias=display-manager.service
++Restart=always
