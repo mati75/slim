@@ -1,28 +1,32 @@
 slim (1.3.6-4) unstable; urgency=medium
 
-  * Drop consolekit depends. Thanks Elimar Riesebieter <riesebie@lxtec.de>
-    for the patch. (Closes: #751618)
-  * Bump Standards-Version to 3.9.6. (no changes needed)
-  * Update homepage.
-  * Update debian/watch to new homepage.
-  * Add new themes Lines for Debian 8:
-    - Update debian/copyright.
+  * Build slim without deprecated consolekit support (Closes: #751618):
+    - Drop consolekit from Depends and libck-connector-dev
+      from Build-Depends in debian/control.
+    - Disable consolekit in CMAKE_FLAGS in debian/rules.
+    Thanks to Elimar Riesebieter <riesebie@lxtec.de>!
+  * Bump Standards-Version to 3.9.6, no changes required.
+  * Update homepage in debian/control and debian/copyright.
+  * Update debian/watch to point to new homepage.
+  * Update and clean up debian/copyright.
+  * Add new Lines theme for Debian Jessie:
     - Refresh debian/patches/slim-conf.patch
     - Update debian/slim.install, debian/rules and
       debian/source/include-binaries for new files.
-    - Fix select session. (Closes: #756519)
-  * Making lintian clear package:
-    - Add fix-hyphen-used-as-minus-sign.patch for like the name call.
+    - Fix key binding for session selection. (Closes: #756519)
+  * Make package lintian-clean:
+    - Add manpage-formatting-fixes.patch to escape a minus
+      sign and remove a trailing space in the slimlock.1.
     - Update debian/copyright.
-    - Add lintian-overrides for informations which can be ignored. 
+    - Add lintian-overrides for info tags which can be ignored.
+    - Add lintian-override for check-gpg-signature as a GPG
+      signature is not provided by upstream yet.
   * Rewrite debian/patches/fix-systemd-service.patch, debian/slim.posinst:
-    - ensure we are starting slim under systemd only when selected as
-      default. Thanks Didier Roche <didrocks@ubuntu.com> for suggests patch.
+    - Ensure we are starting slim on systemd only when selected as
+      default. Thanks Didier Roche <didrocks@ubuntu.com> for the patch.
       (Closes: #748668)
-  * Add lintian-overrides for check-gpg-signature it is not provides by
-    upstream yet.
 
- -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 21 Dec 2014 13:46:02 +0100
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 13 Jan 2015 20:12:03 +0100
 
 slim (1.3.6-3) unstable; urgency=high
 
@@ -290,7 +294,6 @@ slim (1.3.0-2) unstable; urgency=low
 slim (1.3.0-1) unstable; urgency=low
 
   [ Mike Massonnet <mmassonnet@gmail.com> ]
-
   * Package new upstream version 1.3.0. (Closes: #447913)
     - Build against libpam (add build dependency libpam0g-dev).
     - DPatch cfg.cpp to include <stdlib.h> and fix FTBFS with GCC-4.3.
@@ -312,7 +315,6 @@ slim (1.3.0-1) unstable; urgency=low
     - Patch Makefile (LDFLAGS) to remove unnecessary links.
 
   [ Christian Perrier <bubulle@debian.org> ]
-
   * Debconf templates and debian/control reviewed by the debian-l10n-
     english team as part of the Smith review project. (Closes: #426233, #423279)
   * Debconf translation updates:

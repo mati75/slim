@@ -1,0 +1,23 @@
+Description: Fix hyphen used as minus sign
+Author: Mateusz Łukasik <mati75@linuxmint.pl>
+
+--- a/slimlock.1
++++ b/slimlock.1
+@@ -5,7 +5,7 @@
+ .SH SYNOPSIS
+ .nf
+ .fam C
+-\fBslimlock\fP [-v]
++\fBslimlock\fP [\-v]
+ .fam T
+ .fi
+ .SH DESCRIPTION
+@@ -25,7 +25,7 @@ slimlock.conf contains the following set
+ .B dpms_standby_timeout
+ number of seconds of inactivity before the screen blanks.
+ .BI "Default: " 60
+-.TP 
++.TP
+ .B dpms_off_timeout
+ number of seconds of inactivity before the screen is turned off.
+ .BI "Default: " 600

@@ -1,52 +1,53 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: slim
 Upstream-Contact: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
-Source: http://developer.berlios.de/project/showfiles.php?group_id=2663
+Source: http://sourceforge.net/projects/slim.berlios/
 
 Files: *
 Copyright: 1997-1998 Per Liden
-	   2004-2006, Simone Rota <sip@varlock.com>, Johannes Winkelmann <jw@tks6.net>
-	   2006-2013, Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
+	   2004-2006 Simone Rota <sip@varlock.com>
+	   2004-2006 Johannes Winkelmann <jw@tks6.net>
+	   2006-2013 Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
 License: GPL-2+
 
 Files: Ck.cpp
-Copyright: 2011, David Hauweele
+Copyright: 2011 David Hauweele
 License: GPL-2+
 
 Files: Ck.h PAM.*
-Copyright: 2007, Martin Parm
+Copyright: 2007 Martin Parm
 License: GPL-2+
 
 Files: image.*
-Copyright: 2002-2004, Hari Nair <hari@alumni.caltech.edu>
+Copyright: 2002-2004 Hari Nair <hari@alumni.caltech.edu>
 License: GPL-2+
 
 Files: jpeg.c 
        png.c
-Copyright: 2002, Hari Nair <hari@alumni.caltech.edu>
+Copyright: 2002 Hari Nair <hari@alumni.caltech.edu>
 License: GPL-2+
 
 Files: slimlock.cpp
-Copyright: 2010-2012, Joel Burget <joelburget@gmail.com>
+Copyright: 2010-2012 Joel Burget <joelburget@gmail.com>
 License: GPL-2+
 
 Files: util.*
-Copyright: 2009, Eygene Ryabinkin <rea@codelabs.ru>
+Copyright: 2009 Eygene Ryabinkin <rea@codelabs.ru>
 License: GPL-2+
 
 Files: themes/default/panel.png
-Copyright: 2004, Lila Community
+Copyright: 2004 Lila Community
 License: GPL-2+
 
 Files: themes/default/background.jpg
-Copyright: 2005, rafael nascimento
+Copyright: 2005 Rafael Nascimento
 License: permissive
  This file may be copied and used freely without restrictions. It may
  be used in projects which are not available under a GNU General Public License.
 
 Files: cmake/*
-Copyright: 2006, Alexander Neundorf, <neundorf@kde.org>
-	   2008, Kevin Kofler, <kevin.kofler@chello.at>
+Copyright: 2006 Alexander Neundorf <neundorf@kde.org>
+	   2008 Kevin Kofler <kevin.kofler@chello.at>
 License: BSD-3-clause
  These scripts are placed under the BSD license:
  Copyright (c) The Regents of the University of California.
@@ -77,21 +78,21 @@ License: BSD-3-clause
  SUCH DAMAGE.
 
 Files: debian/*
-Copyright: 2007-2008, Mike Massonnet <mmassonnet@gmail.com> 
-	   2009-2012, Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
-	   2014, Mateusz Łukasik <mati75@linuxmint.pl>
+Copyright: 2007-2008 Mike Massonnet <mmassonnet@gmail.com> 
+	   2009-2012 Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
+	   2014-2015 Mateusz Łukasik <mati75@linuxmint.pl>
 License: GPL-2+
 
 Files: debian/debian-joy/*
        debian/debian-moreblue-orbit/*
        debian/debian-spacefun/*
        debian/debian-lines/*
-Copyright: 2007-2008, Mike Massonnet <mmassonnet@gmail.com>
-	   2008, Yves-Alexis Perez <corsac@debian.org>
+Copyright: 2007-2008 Mike Massonnet <mmassonnet@gmail.com>
+	   2008 Yves-Alexis Perez <corsac@debian.org>
 License: GPL-2+
 
 Files: debian/debian-moreblue/*
-Copyright: 2007, Mike Massonnet
+Copyright: 2007 Mike Massonnet <mmassonnet@gmail.com>
 License: GPL-2+
 
 Files: debian/debian-moreblue-orbit/background.png
@@ -99,7 +100,7 @@ Copyright: Valessio S Brito <valessio@debianart.org>
 License: GPL-2+
 
 Files: debian/debian-lines/background.png
-Copyright: 2014, Juliette Taka BELIN <juliettetaka.belin@gmail.com>
+Copyright: 2014 Juliette Taka Belin <juliettetaka.belin@gmail.com>
 License: GPL-2+
 
 License: GPL-2+

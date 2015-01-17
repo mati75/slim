@@ -4,9 +4,8 @@ Priority: optional
 Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
 Uploaders: Jens Peter Secher <jps@debian.org>, Mateusz Łukasik <mati75@linuxmint.pl>
 Build-Depends: debconf, debhelper (>= 9), libjpeg-dev, libpam0g-dev,
-	libpng-dev, libxft-dev, libxmu-dev, po-debconf, sharutils,
-	zlib1g-dev, cmake, freeglut3-dev, libpthread-stubs0-dev, libxrandr-dev,
-        dh-systemd
+	libpng-dev, libxft-dev, libxmu-dev, po-debconf, sharutils, cmake,
+	freeglut3-dev, libpthread-stubs0-dev, libxrandr-dev, dh-systemd
 Standards-Version: 3.9.6
 Homepage: http://sourceforge.net/projects/slim.berlios/
 
