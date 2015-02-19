@@ -1,3 +1,10 @@
+slim (1.3.6-5) unstable; urgency=medium
+
+  * Fix bugged Debian-Lines theme. (Closes: #776693)
+    Thanks HJ <punx665@gmail.com>
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sat, 14 Feb 2015 16:04:30 +0100
+
 slim (1.3.6-4) unstable; urgency=medium
 
   * Build slim without deprecated consolekit support (Closes: #751618):
